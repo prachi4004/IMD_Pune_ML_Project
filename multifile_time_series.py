@@ -53,7 +53,7 @@ new_da1['air'] = new_air.sel(lat='18.5204', lon='73.8567', method='nearest').sel
 print(new_da1)
 print(new_da1.air)
 plot=new_da1.air.plot()
-plt.title(f"Daily Forecast of Air Temperature (°C) at 2m for the year {year}")  # Add the title to the plot
+plt.title(f"Air Temperature (°C) at 2m from {date_s} to {date_e}")  # Add the title to the plot
 plt.ylabel("Air Temperature (°C)")  # Set the y-axis label
 
 plt.savefig("timeseries_output_of_multifile_time_series.png")
