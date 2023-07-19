@@ -52,7 +52,7 @@ new_da1.air.plot(ax=ax,cmap='coolwarm', vmin= -30, vmax = 30,levels=np.arange(-3
 shp = gpd.read_file("./india updated state boundary/india updated state boundary.shp")
 shp.plot(ax=ax, alpha=0.8, facecolor='None', lw=1)
 # Add text description
-description = 'Daily Forecast of Air Temperature (°C) at 2m'
+description = 'Air Temperature (°C) at 2m'
 plt.text(0.5, 1.09, description, transform=ax.transAxes, ha='center', fontsize=12)
 
 
